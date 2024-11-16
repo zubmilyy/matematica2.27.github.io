@@ -5,4 +5,17 @@ body{
   background-color:darkgrey
 }
 
+.tudo {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Estudantes Professores Professores"
+    "Estudantes Horario Horario"
+    "Estudantes Horario Horario";
+}
 
+.Estudantes { grid-area: Estudantes; }
+.Professores { grid-area: Professores; }
+.Horario { grid-area: Horario; }
